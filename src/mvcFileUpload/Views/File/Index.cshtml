@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "上傳圖片";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<form method="post" enctype="multipart/form-data" action="/api/files/album">
+    名稱：<input type="text" name="title" /><br />
+    日期：<input type="date" name="date" /><br />
+    相片：<input type="file" name="photos" multiple accept="image/*" /><br />
+    <input type="submit" value="送出" />
+</form>
+
+@{
+
+}
